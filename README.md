@@ -14,6 +14,8 @@ Credenciais da API: `admin` / `admin123`.
 
 Para executar localmente, inicie somente o banco (`docker compose up -d postgres`) e rode `./mvnw spring-boot:run`.
 
+O Docker e o perfil `local` carregam automaticamente 10 membros e 10 projetos demonstrativos. Para desativar a carga, defina `APP_SEED_DATA=false`.
+
 ## Endpoints
 
 - `POST, GET, PUT, DELETE /api/projects` — CRUD de projetos (a listagem aceita `name`, `status`, `startFrom`, `startTo`, `page` e `size`).

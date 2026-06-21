@@ -20,6 +20,7 @@ services:
       DB_URL: jdbc:postgresql://postgres:5432/portfolio_manager
       DB_USERNAME: portfolio
       DB_PASSWORD: portfolio
+      APP_SEED_DATA: "true"
     ports:
       - "8080:8080"
     depends_on:
